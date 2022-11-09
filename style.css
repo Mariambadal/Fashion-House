@@ -2,6 +2,7 @@
 2.Join section
 3.Fashion section
 4.Navigation bar
+5.Reviews
 */
 	
 	/*General*/
@@ -175,6 +176,7 @@ body{
 .fashion_img{
 	width: 100%;
 	display: block;
+	position: relative;
 }
 .dotted_img_fshn{
 	position: absolute;
@@ -241,6 +243,64 @@ body{
 .checkbtn{
 	display: none;
 }
+	/*Reviews*/
+.reviewsection{
+	max-width: 1140px;
+	width: 100% ;
+	margin:80px auto;
+	padding-left: 23px;
+}
+
+
+.imggirl{
+	border-radius: 50%;
+}
+.container_2{
+	display: flex;
+	margin: -15px;
+	overflow: auto;
+}
+.container_2::-webkit-scrollbar{
+	display: none;
+}
+.people{
+	width: 466px;
+	text-align: center;
+	background: lightblue;
+	padding: 25px;
+	border-radius: 25px;
+	margin: 15px;
+	flex-shrink: 0;
+}
+.reviewsbtn{
+	background: ;
+	width: 208px;
+	height: 56px;
+	border-radius: 100px ;
+	color:#2945FF ;
+	font-size:18px;
+	background: #fff;
+	border: 1px solid #2945FF;
+	margin-top: 23px;
+}
+.reviewsp{
+	color: #000545;
+	font-size: 34px;
+	font-weight: 600;
+	margin-top: 12px;
+}
+.reviewsname{
+	font-size: 18px;
+	color: #2945FF;
+	margin-top: -13px;
+}
+.reviewstext{
+	font-size: 13px;
+}
+
+
+
+
 
 
 @media(max-width:768px){
