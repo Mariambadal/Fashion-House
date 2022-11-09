@@ -1,6 +1,7 @@
 /*1.Bags section
 2.Join section
 3.Fashion section
+4.Navigation bar
 */
 	
 	/*General*/
@@ -87,6 +88,7 @@ body{
 	margin: auto;
 	position: relative;	
 	display: flex;
+	padding: 0 30px;
 }
 .mainimg{
 	width: 100%;
@@ -149,10 +151,11 @@ body{
 	margin:80px auto;
 	display: flex;
 	position: relative;
+	padding: 0 30px;
 }
 .fashion_text{
 	margin: auto;
-	padding-right: 232px;
+	padding-right:100px;
 }
 .h1_fashion{
 	font-size: 68px;
@@ -176,7 +179,7 @@ body{
 .dotted_img_fshn{
 	position: absolute;
 	top: -34px;
-	left: calc(50% + 68px);
+	left: calc(50% + 34px);
 	z-index: -1;
 }
 .dotted_img_2_fshn{
@@ -185,6 +188,60 @@ body{
 	right: -34px;
 	z-index: -1;
 }
+	/*Navigation bar*/
+.mainheader{
+	max-width: 1140px;
+	width: 100%;
+	margin: 38px auto;
+	display: flex;
+	align-items: baseline;
+	padding: 0 30px;
+}
+.mainheaderlink{
+	flex-grow: 1;
+	color: #000;
+}
+.fashionlist{
+	display: flex;
+    list-style-type: none;
+}
+.fashionli {
+    font-weight: 600;
+    font-size: 15px;
+}
+.fashionlink {
+    padding: 12px 24px;
+    color: #000;
+}
+.fashionlink,
+.mainheaderlink {
+    text-decoration: none;
+}
+
+.fashionlink:hover {
+	background-color: #2945ff;
+    border-radius: 24px
+}
+.fashionli:hover .fashionlink{
+	color: #fff;
+}
+.h1house::after {
+    content: "";
+    width: 14px;
+    border: 1px solid #2945ff;
+    position: absolute;
+    bottom: 8px;
+}
+.h1house{
+	position: relative;
+}
+#check{
+	display: none;
+}
+.checkbtn{
+	display: none;
+}
+
 
 @media(max-width:768px){
 	/*1.Bags section*/
@@ -229,7 +286,6 @@ body{
 		flex-direction: column-reverse;
 	}
 	.fashion_text{
-		padding-left: 38px;
 		padding-right: 0;
 	}
 	.h1_fashion{
@@ -239,10 +295,49 @@ body{
 		width: 100%;
 	}
 	.dotted_img_fshn {
-    top: -22px;
-    left: -20px;
+	    top: -22px;
+	    left: -20px;
 	}
 	.dotted_img_2_fshn {
-    bottom: calc(30% + 30px);
-    right: 15px;
+	    bottom: calc(30% + 30px);
+	    right: 15px;
+}
+   /* 4.Navigation bar*/
+   .h1house{
+	   	padding-left: 21px;
+ }
+   .checkbtn {
+    	display: flex;
+}
+	.icon {
+	    font-size: 15px;
+	    width: 30px;
+	    height: 30px;
+	    color: rgb(41, 69, 255);
+}
+	.fashionli {
+   		margin-top: 30px;
+}
+	.fashionlist {
+	    position: fixed;
+	    width: 100%;
+	    height: 100vh;
+	    top: 80px;
+	    left: -100%;
+	    background: rgb(41, 69, 255);
+	    transition: all 0.5s ease 0s;
+	    flex-direction: column;
+	    color: #fff;
+}
+	#check:checked ~ 
+	.fashionlist {
+    	left: 0px;
+    	z-index: 1;
+}
+	.fashionlink{
+		color: #fff;
+		font-size: 35px;
+		margin-left: 50px;
+	}	
+	
 }
