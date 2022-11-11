@@ -3,6 +3,7 @@
 3.Fashion section
 4.Navigation bar
 5.Reviews
+6.Updates section
 */
 	
 	/*General*/
@@ -36,6 +37,7 @@ body{
 	margin-top: -35px;
 	line-height: 111%;
 	letter-spacing: -0.03em;
+	font-size: 40px;
 }
 .bags{
 	display: flex;	
@@ -162,6 +164,7 @@ body{
 	font-size: 68px;
 	line-height: 111%;
 	letter-spacing: -0.03em;
+	color: #000545;
 }
 .fashion_btn{
 	background: #2945FF;
@@ -173,24 +176,20 @@ body{
 	border: none;
 	margin-top: 23px;
 }
-.fashion_img{
-	width: 100%;
-	display: block;
-	position: relative;
-}
+
 .dotted_img_fshn{
 	position: absolute;
 	top: -34px;
-	left: calc(50% + 34px);
+	left:-34px;
 	z-index: -1;
 }
 .dotted_img_2_fshn{
 	position: absolute;
-	bottom: -44px;
+	bottom: -34px;
 	right: -34px;
 	z-index: -1;
 }
-	/*Navigation bar*/
+	/*4.Navigation bar*/
 .mainheader{
 	max-width: 1140px;
 	width: 100%;
@@ -243,15 +242,13 @@ body{
 .checkbtn{
 	display: none;
 }
-	/*Reviews*/
+	/*5.Reviews*/
 .reviewsection{
 	max-width: 1140px;
 	width: 100% ;
 	margin:80px auto;
 	padding-left: 23px;
 }
-
-
 .imggirl{
 	border-radius: 50%;
 }
@@ -268,7 +265,7 @@ body{
 	text-align: center;
 	background: lightblue;
 	padding: 25px;
-	border-radius: 25px;
+	border-radius: 13px;
 	margin: 15px;
 	flex-shrink: 0;
 }
@@ -297,9 +294,55 @@ body{
 .reviewstext{
 	font-size: 13px;
 }
+	/*6.Updates section*/
 
-
-
+.updates_section{
+	max-width: 1140px;
+	width: 100%;
+	padding: 0 30px;
+	margin: 0 auto;
+}
+.updates_img{
+	position: relative;
+}
+.dotted_img_updates,
+.dotted_img_updates_02{
+	position: absolute;
+	top:38px ;
+	left:-36px ;
+	z-index: -1;
+}
+.people_updates{
+	margin-top: 70px;
+}
+.updates,
+.updates_2{
+	display:flex;
+}
+.updates_text{
+	margin: auto;
+	padding-left: 124px;
+	margin-bottom: 72px;
+}
+.date{
+	font-size:16px;
+	color: #A5AEED;
+	margin-bottom: 0px;
+}
+.desktop,
+.fashion_h1{
+	margin-top: 0px;
+}
+.mobile,
+.dotted_img_updates_2,
+.dotted_img_updates_03{
+	display: none;
+}
+.updates_text_2{
+	margin: auto;
+    margin-bottom: 72px;
+    padding-right: 124px;
+}
 
 
 
@@ -359,8 +402,8 @@ body{
 	    left: -20px;
 	}
 	.dotted_img_2_fshn {
-	    bottom: calc(30% + 30px);
-	    right: 15px;
+	    bottom: -34px;
+	    right: -34px;
 }
    /* 4.Navigation bar*/
    .h1house{
@@ -388,16 +431,62 @@ body{
 	    transition: all 0.5s ease 0s;
 	    flex-direction: column;
 	    color: #fff;
-}
+	}
 	#check:checked ~ 
 	.fashionlist {
     	left: 0px;
     	z-index: 1;
-}
+	}
 	.fashionlink{
 		color: #fff;
 		font-size: 35px;
 		margin-left: 50px;
 	}	
-	
+	/*6.Updates section*/
+	.people_updates{
+		width: 100%;
+   		margin-top: 70px;
+	}
+	.updates{
+		flex-direction: column;
+	}
+	.h1_fashion{
+		font-size: 51px;
+	}
+	.updates_text,
+	.updates_text_2{
+		padding: 0;
+	}
+	.mobile{
+		display: block;
+	}
+	.date,
+	.desktop,
+	.fashion_p_2{
+		display: none;
+	}
+	.dotted_img_updates{
+		right: -36px;
+		left: auto;
+	}
+	.dotted_img_updates_2 {
+	    position: absolute;
+	    bottom: -19px;
+	    left: -19px;
+	    z-index: -1;
+	    display: block;
+	}
+	.updates_2{
+		flex-direction: column-reverse;
+	}
+	.dotted_img_updates_03 {
+	    position: absolute;
+	    bottom: -19px;
+	    right: -19px;
+	    z-index: -1;
+	    display: block;
+	}
+    .fashion_img{
+		width: 100%;
+	}
 }
