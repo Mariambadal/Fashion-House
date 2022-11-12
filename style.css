@@ -4,95 +4,108 @@
 */
 	
 	/*General*/
-*{
+* {
 	box-sizing: border-box;
 }
-body{
+body {
 	padding: 0;
 	margin: 0;	
 	font-family: 'Inter', sans-serif;
 }
 	/*1.Bags section*/
-.container{
+.container {
 	width: 100%;
 	padding: 0 30px;
 	max-width: 1140px;
 	margin: 0 auto;
 }
-.section-label{
+
+.section-label {
 	color: #2945FF;
 	width: 100%;
 	height: 32px;
 	font-size: 24px;
 	line-height: 32px;
 	letter-spacing: -0.03em;
-}
-.section-title{
+} 
+
+.section-title {
 	color: #000545;
 	width: 100%;
 	height: 57px;
 	margin-top: -35px;
 	line-height: 111%;
 	letter-spacing: -0.03em;
-}
-.bags{
+} 
+
+.bags {
 	display: flex;	
 }
-.hrefbag{
+
+.hrefbag {
 	padding: 30px 20px 60px 54px;
 	margin-bottom:48px;
 	text-decoration: none;
 }
+
 .hrefbag:hover {
 	background:#2945FF;
 	border-radius: 24px;
 	color: #fff;
 }
-.bag-title{
+
+.bag-title {
 	color:#000545;
 	font-size: 23px;
 	line-height: 111%;
 	letter-spacing: -0.03em;
 }
-.text{
+
+.text {
 	color:#000545;
 	font-size: 14px;
 	font-weight: 400;
 	line-height: 2em;
 }
-.learnmore{
+
+.learnmore {
 	color: #2945FF;
 	font-size: 16px;
 	line-height: 100%;
 	position: relative
 }
-.learnmore::before{
+
+.learnmore::before {
 	content:"";
 	width: 21px;
 	border: 1px solid;
 	position: absolute;
 	left: 0;
 	bottom: -9px;
-}
+} 
+
 .hrefbag:hover .learnmore,
 .hrefbag:hover .text,
-.hrefbag:hover .bag-title{
+.hrefbag:hover .bag-title {
 	color: #fff;
 }
 	/*./ Bags section*/
 	/*2.Join section*/
-.joinsection{
+
+.joinsection {
 	max-width:1140px ;
 	width: 100%;
 	margin: auto;
 	position: relative;	
 	display: flex;
 }
-.mainimg{
-	width: 100%;
+
+.mainimg {
+	width: 100%;  
 	display: block;
 }
-.joinsection::before{
+
+.joinsection::before {
 	content: "";
 	width:1062px;
 	height:563px;
@@ -102,23 +115,27 @@ body{
 	right:-38px;
 	z-index: -1;
 }
-.join_text{
+
+.join_text {
 	position: absolute;
 	width: 380px;
 	right: 100px;
 }
-.join_section_title{
+
+.join_section_title {
 	color: #fff;
 	font-size: 68px;
 }
-.join_p{
+
+.join_p {
 	color: #fff;
 	margin: 50px 0 0 auto;
 	font-size: 18px;
 	line-height: 30px;
 	letter-spacing: -0.03em;
 }
-.join_button{
+
+.join_button {
 	background: #2945FF;
 	width: 178px;
 	height: 56px;
@@ -128,13 +145,15 @@ body{
 	font-size: 18px;
 	margin-top: 52px;
 }
-.dotted_img{
+
+.dotted_img {
 	position: absolute;
 	top: -24px;
 	left: -24px;
 	z-index: -1;
 }
-.dotted_img_2{
+
+.dotted_img_2 {
 	position: absolute;
 	bottom: -44px;
 	right: -34px;
@@ -143,23 +162,27 @@ body{
 	/*./ Join section */
 
 	/*3.Fashion section*/
-.fashionsection{
+
+.fashionsection {
 	max-width: 1140px;
 	width: 100% ;
 	margin:80px auto;
 	display: flex;
 	position: relative;
 }
-.fashion_text{
+
+.fashion_text {
 	margin: auto;
 	padding-right: 232px;
 }
-.h1_fashion{
+
+.h1_fashion {
 	font-size: 68px;
 	line-height: 111%;
 	letter-spacing: -0.03em;
 }
-.fashion_btn{
+
+.fashion_btn {
 	background: #2945FF;
 	width: 178px;
 	height: 56px;
@@ -169,29 +192,42 @@ body{
 	border: none;
 	margin-top: 23px;
 }
-.fashion_img{
+
+.fashion-photo {
+	position: relative;
+	background-image: url("fashionimg/fashion.png");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	width: 100%;
+	padding-top: 60%;
+}
+
+.fashion_img {
 	width: 100%;
 	display: block;
 }
-.dotted_img_fshn{
+
+.dotted_img_fshn {
 	position: absolute;
 	top: -34px;
-	left: calc(50% + 68px);
-	z-index: -1;
-}
-.dotted_img_2_fshn{
-	position: absolute;
-	bottom: -44px;
-	right: -34px;
+	left: -33px;
 	z-index: -1;
 }
 
-@media(max-width:768px){
+.dotted_img_2_fshn {
+	position: absolute;
+	bottom: -30px;
+	right: -22px;
+}
+
+@media(max-width:768px) {
 	/*1.Bags section*/
-	.bags{
+	.bags {
 		flex-direction:column;
 	}
-	.hrefbag{
+
+	.hrefbag {
 		text-align: center;
 		padding: 30px 21px;
 		margin-bottom: 54px;
@@ -199,50 +235,63 @@ body{
 	.hrefbag .learnmore::before{
 		left: calc(50% - 10px);
 	}
+
+
 	/*2.Join section*/
-	.joinsection{
+	.joinsection {
 		padding: 24px;
 		flex-direction: column;
 	}
-	.join_text{
+
+	.join_text {
 		background-color:#2945FF;
 		right: 0;
 		width: 100%;
 		padding: 13px;
 		position: relative;
 	}
-	.join_section_title{
+
+	.join_section_title {
 		font-size: 37px;
 	}
-	.join_button{
+
+	.join_button {
 		width: 100%;
 		border: 1px solid #fff;
 	}
+
 	.dotted_img_2,
 	.dotted_img,
-	.joinsection::before{
+	.joinsection::before {
 		display: none;
 	}
+
 	/*3.Fashion section*/
-	.fashionsection{
+	.fashionsection {
 		padding: 38px;
 		flex-direction: column-reverse;
 	}
-	.fashion_text{
+
+	.fashion_text {
 		padding-left: 38px;
 		padding-right: 0;
 	}
-	.h1_fashion{
+
+	.h1_fashion {
 		padding-top: 28px;
 	}
-	.fashion_btn{
+	.fashion_btn {
 		width: 100%;
 	}
+
+	.fashion-photo {
+		padding-top: 150%;
+	}
+
 	.dotted_img_fshn {
-    top: -22px;
-    left: -20px;
+		width: 75px;
 	}
 	.dotted_img_2_fshn {
-    bottom: calc(30% + 30px);
-    right: 15px;
+		width: 75px;
+	}
 }
