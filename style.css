@@ -400,6 +400,12 @@ body {
   text-align: center;
   letter-spacing: -0.03em;
 }
+.brand_img{
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  object-position: center;
+}
 /*8.Fashion news section*/
 
 .fashion_news {
