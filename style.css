@@ -400,11 +400,14 @@ body {
   text-align: center;
   letter-spacing: -0.03em;
 }
-.brand_img{
+.brand_img {
   width: 100%;
   height: 100%;
   object-fit: contain;
   object-position: center;
+}
+.brand_img_1 {
+  padding: 40px;
 }
 /*8.Fashion news section*/
 
@@ -423,7 +426,6 @@ body {
 }
 .fashion_news_icon {
   display: flex;
-  justify-content: center;
   align-items: center;
 }
 .icon_m {
@@ -723,6 +725,7 @@ sup {
   .footer_text {
     display: flex;
     justify-content: space-between;
+    align-items: baseline;
   }
 }
 
@@ -752,205 +755,4 @@ sup {
   .h3_fashion {
     font-size: 40px;
   }
-}
-.fashionnews_text{
-	margin:100px auto;
-	position: relative;
-	max-width: 400px;
-	padding: inherit;
-}
-.fashionnews_text::after{
-	content: "";
-	position: absolute;
-	width: 100%;
-	border:1px solid #E2E2E2 ;
-}
-.fashionnewsh3,
-.fashionnewsh_3{
-	position: relative;
-	font-size: 24px;
-}
-.fashionnewsh3::after{
-	content: "";
-	position: absolute;
-	width: 100%;
-	border:1px solid #E2E2E2 ;
-	top: -50px;
-    left: 0;
-}
-.learnmore_fshnnews{
-	margin-top: 40px;
-}
-.channelh3{
-	margin-top: 50px;
-}
-.fashionnewsh_3::after{
-	content: "";
-	position: absolute;
-	width: 100%;
-	border:1px solid #E2E2E2 ;
-	top: -23px;
-    left: 0;
-}
-/*.newsicon{
-	display: flex;
-	flex-direction: row-reverse;
-}*/
-
-
-@media(max-width:768px){
-	/*1.Bags section*/
-	.bags{
-		flex-direction:column;
-	}
-	.hrefbag{
-		text-align: center;
-		padding: 30px 21px;
-		margin-bottom: 54px;
-	}
-	.hrefbag .learnmore::before{
-		left: calc(50% - 10px);
-	}
-	/*2.Join section*/
-	.joinsection{
-		padding: 24px;
-		flex-direction: column;
-	}
-	.join_text{
-		background-color:var(--main-color);
-		right: 0;
-		width: 100%;
-		padding: 13px;
-		position: relative;
-	}
-	.join_section_title{
-		font-size: 37px;
-	}
-	.join_button{
-		width: 100%;
-		border: 1px solid var(--text-color-light);
-	}
-	.dotted_img_2,
-	.dotted_img,
-	.joinsection::before{
-		display: none;
-	}
-	/*3.Fashion section*/
-	.fashionsection{
-		padding: 38px;
-		flex-direction: column-reverse;
-	}
-	.fashion_text{
-		padding-right: 0;
-	}
-	.h1_fashion{
-		padding-top: 28px;
-	}
-	.fashion_btn{
-		width: 100%;
-	}
-	.dotted_img_fshn {
-	    top: -22px;
-	    left: -20px;
-	}
-	.dotted_img_2_fshn {
-	    bottom: -34px;
-	    right: -34px;
-	}
-   /* 4.Navigation bar*/
-   .logo{
-	   	padding-left: 21px;
-	}
-   .checkbtn {
-    	display: flex;
-	}
-	.icon {
-	    font-size: 15px;
-	    width: 30px;
-	    height: 30px;
-	    color: var(--main-color);
-	}
-	.fashionli {
-   		margin-top: 30px;
-	}
-	.fashionlist {
-	    position: fixed;
-	    width: 100%;
-	    height: 100vh;
-	    top: 80px;
-	    left: -100%;
-	    background: var(--main-color);
-	    transition: all 0.5s ease 0s;
-	    flex-direction: column;
-	    color: var(--text-color-light);
-	}
-	#check:checked ~ 
-	.fashionlist {
-    	left: 0px;
-    	z-index: 1;
-	}
-	.fashionlink{
-		color: var(--text-color-light);
-		font-size: 35px;
-		margin-left: 50px;
-	}	
-	/*6.Updates section*/
-	.people_updates{
-		width: 100%;
-   		margin-top: 70px;
-	}
-	.updates{
-		flex-direction: column;
-	}
-	.h1_fashion{
-		font-size: 51px;
-	}
-	.updates_text,
-	.updates_text_2{
-		padding: 0;
-	}
-	.mobile{
-		display: block;
-	}
-	.date,
-	.desktop,
-	.fashion_p_2{
-		display: none;
-	}
-	.dotted_img_updates{
-		right: -36px;
-		left: auto;
-	}
-	.dotted_img_updates_2 {
-	    position: absolute;
-	    bottom: -19px;
-	    left: -19px;
-	    z-index: -1;
-	    display: block;
-	}
-	.updates_2{
-		flex-direction: column-reverse;
-	}
-	.dotted_img_updates_03 {
-	    position: absolute;
-	    bottom: -19px;
-	    right: -19px;
-	    z-index: -1;
-	    display: block;
-	}
-    .fashion_img{
-		width: 100%;
-	}
-	/*7.Brands section*/
-	.brand_1 {
-    width: 50%;
-	}
-	/*8.Fashion news section */
-	.fashionnews{
-		flex-direction: column;
-	}
-	.fashionnews_text{
-		margin-top: 44px;
-		max-width: none;
-	}
 }
