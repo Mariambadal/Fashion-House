@@ -8,7 +8,55 @@
 8.Fashion news section
 9.Result section
 */
+/* contact-us */
+.contact-us-img {
+  height: 310px;
+  object-fit: cover;
+  object-position: left -29px;
+}
+.input {
+  border: 1px solid #888dc5;
+  padding: 10px 20px;
+  border-radius: 8px;
+  width: 100%;
+  margin-bottom: 30px;
+}
+.input-control {
+  position: relative;
+}
+.input:focus {
+  outline-color: var(--main-color);
+}
+.label {
+  position: absolute;
+  left: 20px;
 
+  transform: translateY(7px);
+  color: #777;
+  transition: all 0.3s;
+  background-color: #fff;
+  padding: 3px 5px;
+}
+.input:focus + .label {
+  color: var(--text-color-version_1);
+  transform: translateY(-11px) scale(0.8);
+}
+.contact-form {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  display: grid;
+
+  padding: 30px;
+}
+
+@media (min-width: 768px) {
+  .form-row {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 30px;
+  }
+}
 /*General*/
 
 * {
@@ -173,6 +221,10 @@ body {
   position: relative;
   padding: 0 30px;
 }
+.fashion_img {
+  width: 500px;
+}
+
 .fashion_text {
   margin: auto;
   padding-right: 100px;
